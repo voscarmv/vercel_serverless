@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 const KEY = process.env.KEY;
-const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN;
+// const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN;
 
 app.use(cors({
     // origin: [FRONTEND_ORIGIN],
