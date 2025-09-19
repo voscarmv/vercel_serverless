@@ -2,4 +2,4 @@
 
 npm install knex -g
 knex init
-export NODE_ENV=production ; knex migrate:make mig1
+NODE_ENV=development knex migrate:make mig1
