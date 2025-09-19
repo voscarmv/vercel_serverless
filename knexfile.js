@@ -2,8 +2,6 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
-console.log(process.env.PG_CONNECTION_STRING);
-
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
