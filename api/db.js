@@ -1,7 +1,7 @@
 const knexConfig = require('../knexfile');
 const knex = require('knex');
 
-const pg = knex(knexConfig[process.env.NODE_ENV || 'production']);
+const pg = knex(knexConfig[process.env.NODE_ENV || 'development']);
 
 // CRUD
 
