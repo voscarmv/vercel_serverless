@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.port || 3000;
 const key = process.env.key;
 const salt = process.env.salt;
-// const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN;
+// const frontend_origin = process.env.frontend_origin;
 
 function keyVerify(req, res, next) {
   const keys = req.headers['authorization']?.replace('Bearer ', '');
@@ -38,7 +38,7 @@ function hashVerify(req, res, next) {
 }
 
 app.use(cors({
-  // origin: [FRONTEND_ORIGIN],
+  // origin: [frontend_origin],
   origin: [], // Accept all origins
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   credentials: true,
